@@ -1,0 +1,42 @@
+public class TestApp {
+    public static void main(String[] args) {
+
+        // =========================
+        // ข้อ 2 : Selection Sort
+        // =========================
+        int[] data1 = {25, 11, 45, 6, 87, 20, 78, 64};
+
+        Sorting sort1 = new Sorting(data1);
+
+        sort1.selectionSort();
+
+        System.out.print("Selection Sort: ");
+        sort1.printSortedData();
+
+
+        // =========================
+        // ข้อ 4 : Insertion Sort
+        // =========================
+        int[] data2 = {68, 10, 87, 75, 14, 36, 98, 76};
+
+        Sorting sort2 = new Sorting(data2);
+
+        sort2.insertionSort();
+
+        System.out.print("Insertion Sort: ");
+        sort2.printSortedData();
+
+
+        // =========================
+        // ข้อ 6 : Quick Sort
+        // =========================
+        int[] data3 = {87, 11, 26, 35, 49, 85, 21, 46};
+
+        Sorting sort3 = new Sorting(data3);
+
+        sort3.quicksort(0, data3.length - 1);
+
+        System.out.print("Quick Sort: ");
+        sort3.printSortedData();
+    }
+}
